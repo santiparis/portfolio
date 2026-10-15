@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Roboto+Condensed:wght@400;500;600;700&display=swap');
+
+:root {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #f3edf8;
+    background: #121018;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    --font-display: "Bricolage Grotesque", sans-serif;
+    --color-paper: #121018;
+    --color-white: #241e2c;
+    --color-ink: #f3edf8;
+    --color-muted: #aea3b8;
+    --color-violet: #9b72c9;
+    --color-violet-soft: #30243b;
+    --color-red: #ed5361;
+    --color-line: #352c3d;
+    --color-panel: #1e1826;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-width: 320px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 86px;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+body, button, a {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+button, a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible, a:focus-visible {
+    outline: 2px solid var(--color-red);
+    outline-offset: 3px;
+}
+
+#root {
+    min-height: 100vh;
+}
+
+::selection {
+    color: var(--color-white);
+    background: var(--color-violet);
+}
